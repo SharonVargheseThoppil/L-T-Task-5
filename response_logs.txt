@@ -1,0 +1,723 @@
+GET http://127.0.0.1:5000/: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 50268
+      },
+      "remote": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 5000
+      }
+    }
+  },
+  "Request Headers": [
+    {
+      "key": "User-Agent",
+      "value": "PostmanRuntime/7.39.1",
+      "system": true
+    },
+    {
+      "key": "Accept",
+      "value": "*/*",
+      "system": true
+    },
+    {
+      "key": "Cache-Control",
+      "value": "no-cache",
+      "system": true
+    },
+    {
+      "key": "Postman-Token",
+      "value": "bc8a774d-b51d-4e49-9521-e3fb970b0db1",
+      "system": true
+    },
+    {
+      "key": "Host",
+      "value": "127.0.0.1:5000",
+      "system": true
+    },
+    {
+      "key": "Accept-Encoding",
+      "value": "gzip, deflate, br",
+      "system": true
+    },
+    {
+      "key": "Connection",
+      "value": "keep-alive",
+      "system": true
+    }
+  ],
+  "Response Headers": [
+    {
+      "key": "Server",
+      "value": "Werkzeug/3.1.8 Python/3.12.8"
+    },
+    {
+      "key": "Date",
+      "value": "Tue, 15 Sep 2026 09:20:44 GMT"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Content-Length",
+      "value": "171"
+    },
+    {
+      "key": "Connection",
+      "value": "close"
+    }
+  ],
+  "Response Body": "{\n  \"endpoint\": \"/predict\",\n  \"message\": \"CIFAR-10 Deep Learning Prediction API\",\n  \"method\": \"POST\",\n  \"model\": \"cifar10_cnn_model.keras\",\n  \"status\": \"API is running\"\n}\n"
+}
+POST http://127.0.0.1:5000/predict: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 65177
+      },
+      "remote": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 5000
+      }
+    }
+  },
+  "Request Headers": [
+    {
+      "key": "User-Agent",
+      "value": "PostmanRuntime/7.39.1",
+      "system": true
+    },
+    {
+      "key": "Accept",
+      "value": "*/*",
+      "system": true
+    },
+    {
+      "key": "Cache-Control",
+      "value": "no-cache",
+      "system": true
+    },
+    {
+      "key": "Postman-Token",
+      "value": "e9e1f080-4ba1-4d28-b99b-0d728ed9e7a2",
+      "system": true
+    },
+    {
+      "key": "Host",
+      "value": "127.0.0.1:5000",
+      "system": true
+    },
+    {
+      "key": "Accept-Encoding",
+      "value": "gzip, deflate, br",
+      "system": true
+    },
+    {
+      "key": "Connection",
+      "value": "keep-alive",
+      "system": true
+    },
+    {
+      "key": "Content-Length",
+      "value": "0",
+      "system": true
+    }
+  ],
+  "Response Headers": [
+    {
+      "key": "Server",
+      "value": "Werkzeug/3.1.8 Python/3.12.8"
+    },
+    {
+      "key": "Date",
+      "value": "Tue, 15 Sep 2026 09:25:10 GMT"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Content-Length",
+      "value": "100"
+    },
+    {
+      "key": "Connection",
+      "value": "close"
+    }
+  ],
+  "Response Body": "{\n  \"error\": \"No image provided.\",\n  \"message\": \"Please upload an image using the 'image' field.\"\n}\n"
+}
+POST http://127.0.0.1:5000/predict: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 51926
+      },
+      "remote": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 5000
+      }
+    }
+  },
+  "Request Headers": [
+    {
+      "key": "User-Agent",
+      "value": "PostmanRuntime/7.39.1",
+      "system": true
+    },
+    {
+      "key": "Accept",
+      "value": "*/*",
+      "system": true
+    },
+    {
+      "key": "Cache-Control",
+      "value": "no-cache",
+      "system": true
+    },
+    {
+      "key": "Postman-Token",
+      "value": "77fb18e6-0b4e-4d6d-ab12-7ed6a2b32920",
+      "system": true
+    },
+    {
+      "key": "Host",
+      "value": "127.0.0.1:5000",
+      "system": true
+    },
+    {
+      "key": "Accept-Encoding",
+      "value": "gzip, deflate, br",
+      "system": true
+    },
+    {
+      "key": "Connection",
+      "value": "keep-alive",
+      "system": true
+    },
+    {
+      "key": "Content-Length",
+      "value": "222301",
+      "system": true
+    }
+  ],
+  "Request Body": "[{\"id\":2,\"key\":\"Image\",\"type\":\"file\",\"src\":\"c:\\\\Users\\\\Varghese Thoppil\\\\Task_4_Flask_API\\\\test\\\\sample_images\\\\test_image.jpg\"}]",
+  "Response Headers": [
+    {
+      "key": "Server",
+      "value": "Werkzeug/3.1.8 Python/3.12.8"
+    },
+    {
+      "key": "Date",
+      "value": "Tue, 15 Sep 2026 09:29:02 GMT"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Content-Length",
+      "value": "100"
+    },
+    {
+      "key": "Connection",
+      "value": "close"
+    }
+  ],
+  "Response Body": "{\n  \"error\": \"No image provided.\",\n  \"message\": \"Please upload an image using the 'image' field.\"\n}\n"
+}
+POST http://127.0.0.1:5000/predict: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 55157
+      },
+      "remote": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 5000
+      }
+    }
+  },
+  "Request Headers": [
+    {
+      "key": "User-Agent",
+      "value": "PostmanRuntime/7.39.1",
+      "system": true
+    },
+    {
+      "key": "Accept",
+      "value": "*/*",
+      "system": true
+    },
+    {
+      "key": "Cache-Control",
+      "value": "no-cache",
+      "system": true
+    },
+    {
+      "key": "Postman-Token",
+      "value": "222ec94a-b74e-4fb3-b557-ec926aad7a12",
+      "system": true
+    },
+    {
+      "key": "Host",
+      "value": "127.0.0.1:5000",
+      "system": true
+    },
+    {
+      "key": "Accept-Encoding",
+      "value": "gzip, deflate, br",
+      "system": true
+    },
+    {
+      "key": "Connection",
+      "value": "keep-alive",
+      "system": true
+    },
+    {
+      "key": "Content-Length",
+      "value": "222301",
+      "system": true
+    }
+  ],
+  "Request Body": "[{\"key\":\"image\",\"type\":\"file\",\"src\":\"c:\\\\Users\\\\Varghese Thoppil\\\\Task_4_Flask_API\\\\test\\\\sample_images\\\\test_image.jpg\"}]",
+  "Response Headers": [
+    {
+      "key": "Server",
+      "value": "Werkzeug/3.1.8 Python/3.12.8"
+    },
+    {
+      "key": "Date",
+      "value": "Tue, 15 Sep 2026 09:32:58 GMT"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Content-Length",
+      "value": "471"
+    },
+    {
+      "key": "Connection",
+      "value": "close"
+    }
+  ],
+  "Response Body": "{\n  \"class_index\": 5,\n  \"confidence\": 99.99,\n  \"prediction\": \"dog\",\n  \"probabilities\": {\n    \"airplane\": 1.986864232167429e-12,\n    \"automobile\": 9.628090527266913e-15,\n    \"bird\": 1.2026609510940034e-05,\n    \"cat\": 8.43729212647304e-05,\n    \"deer\": 8.452229888211704e-11,\n    \"dog\": 0.9999029636383057,\n    \"frog\": 3.92518274827669e-11,\n    \"horse\": 5.793619948235573e-07,\n    \"ship\": 2.0803866103229728e-15,\n    \"truck\": 2.1446757672745342e-13\n  },\n  \"success\": true\n}\n"
+}
+POST http://127.0.0.1:5000/predict: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 53495
+      },
+      "remote": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 5000
+      }
+    }
+  },
+  "Request Headers": [
+    {
+      "key": "User-Agent",
+      "value": "PostmanRuntime/7.39.1",
+      "system": true
+    },
+    {
+      "key": "Accept",
+      "value": "*/*",
+      "system": true
+    },
+    {
+      "key": "Cache-Control",
+      "value": "no-cache",
+      "system": true
+    },
+    {
+      "key": "Postman-Token",
+      "value": "063c9aa8-f4d1-43dd-ba93-6e1e6b732113",
+      "system": true
+    },
+    {
+      "key": "Host",
+      "value": "127.0.0.1:5000",
+      "system": true
+    },
+    {
+      "key": "Accept-Encoding",
+      "value": "gzip, deflate, br",
+      "system": true
+    },
+    {
+      "key": "Connection",
+      "value": "keep-alive",
+      "system": true
+    },
+    {
+      "key": "Content-Length",
+      "value": "222301",
+      "system": true
+    }
+  ],
+  "Request Body": "[{\"key\":\"image\",\"type\":\"file\",\"src\":\"c:\\\\Users\\\\Varghese Thoppil\\\\Task_4_Flask_API\\\\test\\\\sample_images\\\\test_image.jpg\"}]",
+  "Response Headers": [
+    {
+      "key": "Server",
+      "value": "Werkzeug/3.1.8 Python/3.12.8"
+    },
+    {
+      "key": "Date",
+      "value": "Tue, 15 Sep 2026 10:52:08 GMT"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Content-Length",
+      "value": "471"
+    },
+    {
+      "key": "Connection",
+      "value": "close"
+    }
+  ],
+  "Response Body": "{\n  \"class_index\": 5,\n  \"confidence\": 99.99,\n  \"prediction\": \"dog\",\n  \"probabilities\": {\n    \"airplane\": 1.986864232167429e-12,\n    \"automobile\": 9.628090527266913e-15,\n    \"bird\": 1.2026609510940034e-05,\n    \"cat\": 8.43729212647304e-05,\n    \"deer\": 8.452229888211704e-11,\n    \"dog\": 0.9999029636383057,\n    \"frog\": 3.92518274827669e-11,\n    \"horse\": 5.793619948235573e-07,\n    \"ship\": 2.0803866103229728e-15,\n    \"truck\": 2.1446757672745342e-13\n  },\n  \"success\": true\n}\n"
+}
+POST http://127.0.0.1:5000/predict?image=: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 51525
+      },
+      "remote": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 5000
+      }
+    }
+  },
+  "Request Headers": [
+    {
+      "key": "User-Agent",
+      "value": "PostmanRuntime/7.39.1",
+      "system": true
+    },
+    {
+      "key": "Accept",
+      "value": "*/*",
+      "system": true
+    },
+    {
+      "key": "Cache-Control",
+      "value": "no-cache",
+      "system": true
+    },
+    {
+      "key": "Postman-Token",
+      "value": "27c26edb-9242-41ef-8690-87bacb2a6a10",
+      "system": true
+    },
+    {
+      "key": "Host",
+      "value": "127.0.0.1:5000",
+      "system": true
+    },
+    {
+      "key": "Accept-Encoding",
+      "value": "gzip, deflate, br",
+      "system": true
+    },
+    {
+      "key": "Connection",
+      "value": "keep-alive",
+      "system": true
+    },
+    {
+      "key": "Content-Length",
+      "value": "0",
+      "system": true
+    }
+  ],
+  "Response Headers": [
+    {
+      "key": "Server",
+      "value": "Werkzeug/3.1.8 Python/3.12.8"
+    },
+    {
+      "key": "Date",
+      "value": "Tue, 15 Sep 2026 10:58:30 GMT"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Content-Length",
+      "value": "100"
+    },
+    {
+      "key": "Connection",
+      "value": "close"
+    }
+  ],
+  "Response Body": "{\n  \"error\": \"No image provided.\",\n  \"message\": \"Please upload an image using the 'image' field.\"\n}\n"
+}
+POST http://127.0.0.1:5000/predict: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 51540
+      },
+      "remote": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 5000
+      }
+    }
+  },
+  "Request Headers": [
+    {
+      "key": "User-Agent",
+      "value": "PostmanRuntime/7.39.1",
+      "system": true
+    },
+    {
+      "key": "Accept",
+      "value": "*/*",
+      "system": true
+    },
+    {
+      "key": "Cache-Control",
+      "value": "no-cache",
+      "system": true
+    },
+    {
+      "key": "Postman-Token",
+      "value": "17f3bb38-6eff-4578-a718-fdf5d9af0356",
+      "system": true
+    },
+    {
+      "key": "Host",
+      "value": "127.0.0.1:5000",
+      "system": true
+    },
+    {
+      "key": "Accept-Encoding",
+      "value": "gzip, deflate, br",
+      "system": true
+    },
+    {
+      "key": "Connection",
+      "value": "keep-alive",
+      "system": true
+    },
+    {
+      "key": "Content-Length",
+      "value": "205",
+      "system": true
+    }
+  ],
+  "Request Body": "[{\"id\":2,\"key\":\"image\",\"type\":\"file\",\"src\":\"d:\\\\hi.txt\"}]",
+  "Response Headers": [
+    {
+      "key": "Server",
+      "value": "Werkzeug/3.1.8 Python/3.12.8"
+    },
+    {
+      "key": "Date",
+      "value": "Tue, 15 Sep 2026 11:27:14 GMT"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Content-Length",
+      "value": "160"
+    },
+    {
+      "key": "Connection",
+      "value": "close"
+    }
+  ],
+  "Response Body": "{\n  \"details\": \"cannot identify image file <tempfile.SpooledTemporaryFile object at 0x000001926EF62D70>\",\n  \"error\": \"Prediction failed.\",\n  \"success\": false\n}\n"
+}
+POST http://127.0.0.1:5000/predict: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 55138
+      },
+      "remote": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 5000
+      }
+    }
+  },
+  "Request Headers": [
+    {
+      "key": "User-Agent",
+      "value": "PostmanRuntime/7.39.1",
+      "system": true
+    },
+    {
+      "key": "Accept",
+      "value": "*/*",
+      "system": true
+    },
+    {
+      "key": "Cache-Control",
+      "value": "no-cache",
+      "system": true
+    },
+    {
+      "key": "Postman-Token",
+      "value": "ded9995b-8858-4e92-9fd8-b8b5c6e1c770",
+      "system": true
+    },
+    {
+      "key": "Host",
+      "value": "127.0.0.1:5000",
+      "system": true
+    },
+    {
+      "key": "Accept-Encoding",
+      "value": "gzip, deflate, br",
+      "system": true
+    },
+    {
+      "key": "Connection",
+      "value": "keep-alive",
+      "system": true
+    },
+    {
+      "key": "Content-Length",
+      "value": "0",
+      "system": true
+    }
+  ],
+  "Response Headers": [
+    {
+      "key": "Server",
+      "value": "Werkzeug/3.1.8 Python/3.12.8"
+    },
+    {
+      "key": "Date",
+      "value": "Tue, 15 Sep 2026 11:48:46 GMT"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Content-Length",
+      "value": "100"
+    },
+    {
+      "key": "Connection",
+      "value": "close"
+    }
+  ],
+  "Response Body": "{\n  \"error\": \"No image provided.\",\n  \"message\": \"Please upload an image using the 'image' field.\"\n}\n"
+}
+GET http://127.0.0.1:5000/invalid: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 49672
+      },
+      "remote": {
+        "address": "127.0.0.1",
+        "family": "IPv4",
+        "port": 5000
+      }
+    }
+  },
+  "Request Headers": [
+    {
+      "key": "User-Agent",
+      "value": "PostmanRuntime/7.39.1",
+      "system": true
+    },
+    {
+      "key": "Accept",
+      "value": "*/*",
+      "system": true
+    },
+    {
+      "key": "Cache-Control",
+      "value": "no-cache",
+      "system": true
+    },
+    {
+      "key": "Postman-Token",
+      "value": "3e631c99-9746-428e-a09e-6272719e726c",
+      "system": true
+    },
+    {
+      "key": "Host",
+      "value": "127.0.0.1:5000",
+      "system": true
+    },
+    {
+      "key": "Accept-Encoding",
+      "value": "gzip, deflate, br",
+      "system": true
+    },
+    {
+      "key": "Connection",
+      "value": "keep-alive",
+      "system": true
+    }
+  ],
+  "Response Headers": [
+    {
+      "key": "Server",
+      "value": "Werkzeug/3.1.8 Python/3.12.8"
+    },
+    {
+      "key": "Date",
+      "value": "Tue, 15 Sep 2026 11:52:43 GMT"
+    },
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Content-Length",
+      "value": "79"
+    },
+    {
+      "key": "Connection",
+      "value": "close"
+    }
+  ],
+  "Response Body": "{\n  \"error\": \"Endpoint not found.\",\n  \"message\": \"Please check the API URL.\"\n}\n"
+}
